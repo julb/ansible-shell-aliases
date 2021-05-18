@@ -1,0 +1,19 @@
+---
+# defaults file for shell-aliases
+shell_aliases_shell_files:
+  - /etc/profile.d/custom-aliases.sh
+  - /etc/profile.d/custom-aliases.csh
+shell_aliases:
+  - name: c
+    command: 'clear'
+  - name: untar
+    command: 'tar -xvf'
+  - name: untarz
+    command: 'tar -zxvf'
+  - name: ping
+    command: 'ping -c 5'
+  - name: ll
+    command: 'ls -al'
+  - name: hrep
+    command: 'history | grep'
+shell_aliases_extras: []

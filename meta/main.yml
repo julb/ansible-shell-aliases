@@ -1,0 +1,18 @@
+galaxy_info:
+  role_name: shell_aliases
+  author: julb
+  description: A role which installs shell aliases globally on a system.
+  company: julb.me
+
+  license: MIT
+
+  min_ansible_version: 2.8
+
+  platforms:
+    - name: "EL"
+      versions:
+        - 7
+
+  galaxy_tags: ["shell", "aliases", "profile"]
+
+dependencies: []

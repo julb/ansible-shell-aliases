@@ -1,0 +1,3 @@
+{% for shell_alias in shell_aliases + shell_aliases_extras %}
+alias {{ shell_alias.name }}={{ shell_alias.command | quote }}
+{% endfor %}

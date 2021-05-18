@@ -1,0 +1,10 @@
+---
+- name: shell aliases should be installed
+  become: yes
+  ansible.builtin.template:
+    src: shell-aliases.sh.j2
+    dest: "{{ item }}"
+    mode: 0644
+    owner: root
+    group: root
+  with_items: "{{ shell_aliases_shell_files }}"
